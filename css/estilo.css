@@ -1,0 +1,191 @@
+body{
+    background-color: #e8bf55; 
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    position: fixed;
+    z-index: 10;
+}
+.menu ul{
+    list-style: none;
+    padding:0;
+    background-color: #273464;
+}
+.menu ul li{
+    display: inline;
+}
+.menu ul li a{
+    color:#ffffff;
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    
+}
+.menu ul li a:hover{
+    background-color: #d7d7d7;
+    opacity: 0.7;
+    transition: 2s;
+}
+.logo {
+    margin-right: -10px;
+    margin-top: 12px;
+    margin-bottom: 3px;
+    width: 280px;
+    height: 35px;
+    float: right;
+}
+.imagem{
+    float: right;
+    margin-right: 30px;
+    margin-top: 2.5px;
+    width: 4.5%
+}
+.texto{
+    font-family: 'Barlow', sans-serif; 
+    text-size-adjust: 1.5px;
+}
+.corpo{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e8bf55; 
+}
+.slider {
+    position: relative;
+    width: 100%;
+    overflow:hidden;
+}
+.caixa{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+.images {
+    display: flex;
+    width: 1450px;
+}
+.images img {
+    height: 600px;
+    width: 1450px;
+    transition: all 0.15s ease;
+}
+.images input {
+    display: none;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.dots label:hover {background: #fff;}
+#img1:checked ~ .m1 {
+    margin-left: 0;
+}
+#img2:checked ~ .m2 {
+    margin-left: -100%;
+}
+#img3:checked ~ .m3 {
+    margin-left: -195%;
+}
+#img4:checked ~ .m4 {
+    margin-left: -302.5%;
+}
+.fontedois{
+    font-family: 'Open Sans', sans-serif;
+}
+.esquerda{
+    text-align: left;
+}
+.cor{
+    color:#fff;
+}
+
+@media all and (max-width: 608px) {
+    .vacc{
+        margin-top: -170px;
+    }
+    .vivi{
+        margin-top: 20px;
+    }
+    .pri{
+        margin-top: -110px;
+        margin-left:40px;
+    }
+  
+
+    #menu  {
+        float: none;
+        width: 100%;
+        height: 65px;
+    }
+    .menu ul li{
+        visibility: hidden;
+    }
+    #hmm{
+        float: right;
+       margin-right:65px;
+        margin-top: 2px;
+        width: 250px;
+        height: 40px;
+    }
+    #bau{
+        float: left;
+        margin-left: 70px;
+        margin-top: 10px;
+        width: 15%;
+    }
+    .dots {
+        align-items: center;
+    }
+    .dots label {
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        border: solid #fff 3px;
+        cursor: pointer;
+        transition: all 0.15s ease;
+        margin: 3px;
+    }
+    .images {
+        display: flex;
+        width: 451px;
+    }
+    .images img {
+
+        height: 186px;
+        width: 451px;
+        margin-top: -20px;
+    }
+    .images input {
+        display: none;
+    }
+    .dots label:hover {background: #fff;}
+#img1:checked ~ .m1 {
+    margin-left: 0;
+}
+#img2:checked ~ .m2 {
+    margin-left: -100%;
+}
+#img3:checked ~ .m3 {
+    margin-left: -200%;
+}
+#img4:checked ~ .m4 {
+    margin-left: -300%;
+}
+}
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
