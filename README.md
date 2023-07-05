@@ -1,2 +1,2 @@
 # RobertaHoffmeister.github.io
-aaaaaaaaaabc
+News Cast --- versão para mobile
